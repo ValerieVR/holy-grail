@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layout - Holy Grail</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      .bg {
+        background-image: url(Images/laptop.jpg);
+        height: 100%;
+        background-position: bottom;
+        background-size: cover;
+      }
+      
+      a {
+        background-color: #19d3da;
+        color: white;
+        font-family: Tahoma, Verdana, 'Trebuchet MS', Arial;
+        font-weight: bold;
+        padding: 1em 2em;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      a:hover{
+        background-color: #1ab9be;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+      <div class="bg">
+        <div class="container">
+          <a href="./CSS_flexbox/flexbox.html">flexbox</a>
+           <a href="./CSS_grid/grid.html">grid</a>
+           <a href="./CSS_floats/floats.html">floats</a>
+        </div>
+      </div>
+  </body>
+</html>
